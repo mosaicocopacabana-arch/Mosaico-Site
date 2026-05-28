@@ -790,15 +790,29 @@
     .sobre-stats { grid-template-columns: 1fr; }
   }
 
-  .logo-img { height: 38px; width: auto; display: block; }
-  .logo-img-hero { height: 70px; width: auto; display: block; margin: 0 auto 28px; filter: drop-shadow(0 2px 12px rgba(201,169,110,0.3)); }
-  .logo-img-footer { height: 60px; width: auto; display: block; margin: 0 auto 12px; opacity: 0.9; }
-  /* Ícones com fundo já transparente (PNG) — sem blend */
-  .stat-item img { background: transparent !important; }
-  /* Demais ícones JPEG ainda usam multiply para sumir o branco */
-  .benefit-icon img,
-  .benefit-icon-large img,
-  .feature-icon img,
+  .logo-img { 
+  height: 38px; 
+  width: auto; 
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.logo-img-hero { 
+  height: 70px; 
+  width: auto; 
+  display: block; 
+  margin: 0 auto 28px;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 12px rgba(201,169,110,0.3));
+}
+
+.logo-img-footer { 
+  height: 60px; 
+  width: auto; 
+  display: block; 
+  margin: 0 auto 12px; 
+  opacity: 0.9;
+  filter: brightness(0) invert(1);
+}
   .service-icon img,
   .step-icon img,
   .stat-icon img { mix-blend-mode: multiply; background: transparent !important; }
